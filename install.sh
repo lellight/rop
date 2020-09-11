@@ -183,8 +183,8 @@ else
 
     # Download MetaPhlAn 2.
     echo '----- Downloading MetaPhlAn 2 --------------------------------------------------'
-    hg clone https://bitbucket.org/biobakery/metaphlan2
-    cd metaphlan2
+    git clone https://github.com/biobakery/metaphlan
+    cd metaphlan
     #ln -s ../../db_human/databases
     cd ..
 

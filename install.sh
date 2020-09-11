@@ -168,7 +168,7 @@ if [ $CLEAN_ONLY = false ] && [ $REINSTALL = false ] && [ -d 'imrep' ]; then
         'please use the -r option.'
 else
     echo '----- Removing previous versions -----------------------------------------------'
-    rm -fr imrep metaphlan2 MiniConda
+    rm -fr imrep metaphlan MiniConda
     if [ $CLEAN_ONLY = true ]; then
         echo 'Done: Cleaning complete.'
         exit 0
@@ -182,7 +182,7 @@ else
     cd ..
 
     # Download MetaPhlAn 2.
-    echo '----- Downloading MetaPhlAn 2 --------------------------------------------------'
+    echo '----- Downloading MetaPhlAn --------------------------------------------------'
     git clone https://github.com/biobakery/metaphlan
     cd metaphlan
     #ln -s ../../db_human/databases

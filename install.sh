@@ -191,7 +191,7 @@ else
     # Download MiniConda.
     echo '----- Setting up Python environment --------------------------------------------'
     if [ $NATIVE = false ]; then
-        ./install-MiniConda.sh
+        MiniConda/install-MiniConda.sh
         cd MiniConda/lib
         ln -s libncursesw.so.5 libtinfow.so.5
         cd ../..
